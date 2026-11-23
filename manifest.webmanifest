@@ -1,0 +1,24 @@
+{
+  "name": "Water Sort 水排序",
+  "short_name": "Water Sort",
+  "description": "免費開源的顏色分類益智遊戲：把彩色水排序到每支試管只剩單一顏色。",
+  "lang": "zh-Hant",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0b1021",
+  "theme_color": "#0b1021",
+  "icons": [
+    {
+      "src": "play/icons/Icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "play/icons/Icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
