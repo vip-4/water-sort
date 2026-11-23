@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b1021">
+  <meta name="color-scheme" content="dark">
+  <title>Water Sort 水排序｜免安裝線上玩｜開源 Flutter 益智遊戲</title>
+  <meta name="description" content="Water Sort 水排序是一款免費開源的顏色分類益智遊戲：把試管中的彩色水排序，讓每支試管只剩單一顏色。以 Flutter 打造、WebAssembly 於瀏覽器執行，免註冊、免下載、100% 離線、無廣告、無追蹤，採 GPL-3.0 授權。">
+  <meta name="keywords" content="Water Sort, 水排序, 排序遊戲, 益智遊戲, 顏色分類, Flutter, WebAssembly, HTML5 遊戲, 開源遊戲, 免安裝遊戲, 離線遊戲, GPL-3.0, 無廣告遊戲">
+  <meta name="author" content="sidhant947（原始作者）· 本站為開源發行頁">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://vip-4.github.io/water-sort/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Water Sort 水排序">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:title" content="Water Sort 水排序｜免安裝線上玩｜開源 Flutter 益智遊戲">
+  <meta property="og:description" content="把彩色水排序到每支試管只剩單一顏色。免費開源、免註冊、離線可玩、無廣告無追蹤，GPL-3.0 授權。">
+  <meta property="og:url" content="https://vip-4.github.io/water-sort/">
+  <meta property="og:image" content="https://vip-4.github.io/water-sort/og-image.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Water Sort 水排序：把彩色水分類到單一顏色的開源益智遊戲">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Water Sort 水排序｜免安裝線上玩｜開源 Flutter 益智遊戲">
+  <meta name="twitter:description" content="免費開源、免註冊、離線可玩、無廣告無追蹤的水排序益智遊戲，GPL-3.0 授權。">
+  <meta name="twitter:image" content="https://vip-4.github.io/water-sort/og-image.png">
+  <meta name="twitter:image:alt" content="Water Sort 水排序遊戲示意圖">
+
+  <link rel="icon" href="play/favicon.png" type="image/png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://vip-4.github.io/water-sort/#website",
+    "url": "https://vip-4.github.io/water-sort/",
+    "name": "Water Sort 水排序",
+    "description": "免費開源的顏色分類益智遊戲，可於瀏覽器直接遊玩。",
+    "inLanguage": "zh-Hant",
+    "publisher": { "@id": "https://vip-4.github.io/water-sort/#organization" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://vip-4.github.io/water-sort/#organization",
+    "name": "sidhant947",
+    "url": "https://github.com/sidhant947/water-sort",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://vip-4.github.io/water-sort/og-image.png",
+      "width": 1200,
+      "height": 630
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "@id": "https://vip-4.github.io/water-sort/#app",
+    "name": "Water Sort 水排序",
+    "applicationCategory": "GameApplication",
+    "applicationSubCategory": "Puzzle Game",
+    "operatingSystem": "任何支援 HTML5 的現代瀏覽器",
+    "url": "https://vip-4.github.io/water-sort/",
+    "description": "把試管中的彩色水反覆倒入，直到每支試管都只剩單一顏色。程序生成無限關卡、100% 離線、無廣告、無追蹤，採 GPL-3.0 開源授權。",
+    "isAccessibleForFree": true,
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TWD" },
+    "author": { "@id": "https://vip-4.github.io/water-sort/#organization" },
+    "license": "https://www.gnu.org/licenses/gpl-3.0.html"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://vip-4.github.io/water-sort/#breadcrumb",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://vip-4.github.io/water-sort/" },
+      { "@type": "ListItem", "position": 2, "name": "遊戲說明", "item": "https://vip-4.github.io/water-sort/#about" },
+      { "@type": "ListItem", "position": 3, "name": "常見問題", "item": "https://vip-4.github.io/water-sort/#faq" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://vip-4.github.io/water-sort/#faq",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Water Sort 水排序怎麼玩？",
+        "acceptedAnswer": { "@type": "Answer", "text": "點選一支試管作為來源，再點另一支作為目標，把頂端同色的水倒入。目標試管需為空或頂端顏色相同，且空間足夠。當每支試管都只剩單一顏色即過關。" }
+      },
+      {
+        "@type": "Question",
+        "name": "Water Sort 免費嗎？需要註冊或下載嗎？",
+        "acceptedAnswer": { "@type": "Answer", "text": "完全免費、免註冊、免下載。這是純前端網頁版，以 WebAssembly 在瀏覽器執行，開啟網頁即可遊玩；Android 使用者也可從 Google Play 或 F-Droid 安裝。" }
+      },
+      {
+        "@type": "Question",
+        "name": "遊戲會收集我的資料或顯示廣告嗎？",
+        "acceptedAnswer": { "@type": "Answer", "text": "不會。這是一款 100% 離線、無廣告、無追蹤、免網路權限的遊戲，遊戲進度僅保存在你自己的裝置上。" }
+      },
+      {
+        "@type": "Question",
+        "name": "這是開源遊戲嗎？授權是什麼？",
+        "acceptedAnswer": { "@type": "Answer", "text": "是。Water Sort 由 sidhant947 以 Flutter 開發，採 GPL-3.0 開源授權，原始碼公開於 GitHub，可自由研究、修改與再散布（需遵守 GPL-3.0 條款）。" }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root{--bg:#0b1021;--surface:#151d33;--surface-2:#1c2745;--border:#2a3554;--text:#e8ecf8;--muted:#a9b4d0;--gold:#fbbf24;--gold-soft:#fde68a;--indigo:#6366f1;--radius:14px}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI","Noto Sans TC",sans-serif;line-height:1.65}
+    a{color:var(--gold-soft);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1080px;margin:0 auto;padding:0 clamp(1rem,3vw,2rem)}
+    .skip-link{position:absolute;left:-9999px;top:0;background:var(--gold);color:#241a00;padding:.6rem 1rem;border-radius:0 0 8px 0;z-index:100}
+    .skip-link:focus{left:0}
+    header.site-header{position:sticky;top:0;z-index:50;background:rgba(11,16,33,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem 0}
+    .brand{display:flex;align-items:center;gap:.55rem;font-weight:900;letter-spacing:.5px;color:var(--text)}
+    .brand-mark{display:grid;place-items:center;width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--indigo),#4338ca);color:#fff;font-weight:900}
+    nav ul{display:flex;gap:1rem;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+    nav a{font-size:.9rem;color:var(--muted);font-weight:600}
+    nav a:hover{color:var(--gold-soft);text-decoration:none}
+    .hero{padding:clamp(2rem,5vw,3.5rem) 0 1rem}
+    .eyebrow{display:inline-block;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:800;background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.25);padding:.3rem .7rem;border-radius:999px;margin:0 0 1rem}
+    h1{font-size:clamp(1.8rem,4.5vw,2.9rem);line-height:1.2;margin:.2rem 0 .8rem;letter-spacing:-.01em}
+    .lead{font-size:clamp(1rem,1.6vw,1.12rem);color:#cfd8ee;max-width:70ch;margin:0 0 1.4rem}
+    .lead strong{color:#fff}
+    .hero-actions{display:flex;gap:.8rem;flex-wrap:wrap;margin-bottom:1.6rem}
+    .btn{display:inline-flex;align-items:center;gap:.45rem;font-weight:800;font-size:.95rem;padding:.72rem 1.3rem;border-radius:999px;border:1px solid transparent;cursor:pointer;transition:transform .15s ease,background .15s ease}
+    .btn-primary{background:linear-gradient(135deg,var(--gold),#f59e0b);color:#241a00}
+    .btn-primary:hover{transform:translateY(-2px);text-decoration:none}
+    .btn-ghost{background:transparent;border-color:var(--border);color:var(--text)}
+    .btn-ghost:hover{border-color:var(--gold);text-decoration:none}
+    .quick-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:.8rem;list-style:none;margin:0;padding:0}
+    .quick-facts>div{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:.8rem 1rem}
+    .quick-facts dt{font-size:.75rem;color:var(--muted)}
+    .quick-facts dd{margin:.15rem 0 0;font-size:1.05rem;font-weight:900;color:var(--gold-soft);font-variant-numeric:tabular-nums}
+    section.block{padding:clamp(1.6rem,4vw,2.6rem) 0}
+    section.block h2{font-size:clamp(1.3rem,3vw,1.8rem);margin:0 0 .6rem}
+    .section-lead{color:#cfd8ee;max-width:72ch;margin:0 0 1.4rem}
+    .game-frame{width:100%;height:clamp(420px,76vh,740px);border:1px solid var(--border);border-radius:calc(var(--radius) + 6px);background:#000;display:block}
+    .game-shell{position:relative}
+    .game-badge{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:.8rem;font-size:.88rem;color:var(--muted)}
+    .game-badge strong{color:var(--gold-soft)}
+    .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem}
+    .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.1rem 1.2rem}
+    .card h3{margin:0 0 .4rem;color:var(--gold-soft);font-size:1.05rem}
+    .card p{margin:0;color:var(--muted);font-size:.92rem}
+    ol.steps{margin:.4rem 0 0;padding-left:1.2rem;color:#cfd8ee}
+    ol.steps li{margin-bottom:.5rem}
+    .def-list{margin:0;display:grid;gap:.6rem}
+    .def-list>div{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:.8rem 1rem}
+    .def-list dt{font-weight:800;color:var(--gold-soft);font-size:.92rem}
+    .def-list dd{margin:.2rem 0 0;color:var(--muted);font-size:.9rem}
+    .faq-list details{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:.7rem;padding:0 1rem}
+    .faq-list summary{cursor:pointer;font-weight:700;padding:.9rem 0;list-style:none}
+    .faq-list summary::-webkit-details-marker{display:none}
+    .faq-list summary::after{content:"＋";float:right;color:var(--gold)}
+    .faq-list details[open] summary::after{content:"－"}
+    .faq-list p{margin:0 0 1rem;color:var(--muted);font-size:.92rem}
+    .license-note{background:rgba(99,102,241,.08);border:1px solid rgba(99,102,241,.3);border-radius:var(--radius);padding:1rem 1.2rem;margin-top:1.2rem;font-size:.9rem;color:#cfd8ee}
+    .disclaimer{background:rgba(220,38,38,.07);border:1px solid rgba(220,38,38,.28);border-radius:var(--radius);padding:1.1rem 1.3rem}
+    footer.site-footer{border-top:1px solid var(--border);margin-top:2rem;padding:1.4rem 0;color:var(--muted);font-size:.88rem}
+    .footer-inner{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+    :focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:6px}
+    @media (max-width:720px){nav ul{gap:.7rem}.game-frame{height:clamp(380px,70vh,620px)}}
+    @media print{header.site-header,.hero-actions,.game-shell{display:none}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至主要內容</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Water Sort 水排序首頁">
+        <span class="brand-mark" aria-hidden="true">水</span>
+        <span>WATER<b>SORT</b></span>
+      </a>
+      <nav aria-label="主要導覽">
+        <ul>
+          <li><a href="#play">線上遊玩</a></li>
+          <li><a href="#about">遊戲介紹</a></li>
+          <li><a href="#howto">玩法說明</a></li>
+          <li><a href="#source">開源與授權</a></li>
+          <li><a href="#faq">常見問題</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article>
+      <section id="top" class="hero">
+        <div class="wrap">
+          <p class="eyebrow">Open-source Puzzle · Flutter + WebAssembly</p>
+          <h1>Water Sort 水排序：把彩色水分類到單一顏色的免費開源益智遊戲</h1>
+          <p class="lead">
+            <strong>Water Sort 水排序</strong>是一款規則簡單、越玩越上癮的顏色分類益智遊戲：點選試管把頂端同色的水倒入另一支試管，直到<strong>每支試管都只剩單一顏色</strong>即過關。
+            本頁提供可直接在瀏覽器遊玩的網頁版，以 Flutter 編譯為 WebAssembly 執行，<strong>免註冊、免下載、100% 離線、無廣告、無追蹤</strong>，並以 GPL-3.0 開源授權發行。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#play">▶ 立即線上遊玩</a>
+            <a class="btn btn-ghost" href="#howto">查看玩法</a>
+            <a class="btn btn-ghost" href="https://github.com/sidhant947/water-sort" rel="noopener noreferrer">GitHub 原始碼</a>
+          </div>
+          <dl class="quick-facts" aria-label="快速資訊">
+            <div><dt>遊戲類型</dt><dd>益智 / 分類</dd></div>
+            <div><dt>執行方式</dt><dd>Flutter WebAssembly</dd></div>
+            <div><dt>價格</dt><dd>完全免費</dd></div>
+            <div><dt>授權</dt><dd>GPL-3.0</dd></div>
+            <div><dt>廣告 / 追蹤</dt><dd>無</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="play" class="block">
+        <div class="wrap">
+          <h2>線上遊玩</h2>
+          <p class="section-lead">直接在下方開始遊戲，無需安裝任何套件。若 iframe 無法載入，可點「全螢幕遊玩」開啟獨立遊戲頁。</p>
+          <div class="game-shell">
+            <div class="game-badge">
+              <span>遊戲狀態：<strong id="game-state">載入中…</strong></span>
+              <span><a href="play/index.html" target="_blank" rel="noopener">全螢幕遊玩 ↗</a></span>
+            </div>
+            <iframe id="game" class="game-frame" src="play/index.html" title="Water Sort 水排序遊戲畫面" loading="lazy" allow="fullscreen; autoplay"></iframe>
+          </div>
+          <p style="color:var(--muted);font-size:.85rem;margin-top:.8rem">
+            提示：首次載入需下載遊戲引擎（約數 MB），請耐心等候；載入完成後即可離線遊玩。
+          </p>
+        </div>
+      </section>
+
+      <section id="about" class="block">
+        <div class="wrap">
+          <h2>遊戲介紹</h2>
+          <p class="section-lead">
+            Water Sort 的目標非常直覺：畫面上有多支裝著不同顏色水層的試管，玩家要透過「倒水」把相同顏色集中到同一支試管。規則雖簡單，但關卡由程序生成、難度循序漸進，需要規劃每一步的順序與空管運用，因此耐玩度很高。
+          </p>
+          <div class="card-grid">
+            <div class="card">
+              <h3>無限程序生成關卡</h3>
+              <p>關卡採程序生成，沒有關卡上限、體力值或等待時間，想玩多久就玩多久。</p>
+            </div>
+            <div class="card">
+              <h3>100% 離線、零追蹤</h3>
+              <p>不需要網路連線、不索取多餘權限，遊戲進度只留在你的裝置，沒有任何分析或廣告。</p>
+            </div>
+            <div class="card">
+              <h3>跨平台執行</h3>
+              <p>網頁版以 WebAssembly 執行；Android 亦可從 Google Play 或 F-Droid 安裝原生版本。</p>
+            </div>
+            <div class="card">
+              <h3>開源可驗證</h3>
+              <p>原始碼公開於 GitHub，採 GPL-3.0 授權，可自由研究、修改與再散布。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="howto" class="block">
+        <div class="wrap">
+          <h2>玩法說明</h2>
+          <p class="section-lead">操作直覺，一學就會：</p>
+          <ol class="steps">
+            <li>點一下要倒水的<strong>來源試管</strong>，再點一下<strong>目標試管</strong>。</li>
+            <li>只有當目標試管是空的，或頂端顏色與來源相同，且剩餘空間足夠時，水才會倒入。</li>
+            <li>每次只能倒「頂端連續同色」的水；若目標空間不足，會只倒入能容納的部分。</li>
+            <li>當每支試管都只剩單一顏色（或為空）時即過關，進入下一關。</li>
+          </ol>
+          <div class="license-note">
+            小技巧：保留至少一支空管作為暫存，先處理顏色層數最多的試管，通常比急著清空單一顏色更容易破關。
+          </div>
+        </div>
+      </section>
+
+      <section id="source" class="block">
+        <div class="wrap">
+          <h2>開源與授權</h2>
+          <p class="section-lead">
+            本遊戲為 sidhant947 開發的開源專案，以下為可驗證的官方來源。本頁僅提供網頁版發行與說明，未修改遊戲邏輯。
+          </p>
+          <dl class="def-list">
+            <div>
+              <dt>原始碼</dt>
+              <dd>GitHub：<a href="https://github.com/sidhant947/water-sort" rel="noopener noreferrer">sidhant947/water-sort</a>（Flutter / Dart）</dd>
+            </div>
+            <div>
+              <dt>授權條款</dt>
+              <dd><a href="https://www.gnu.org/licenses/gpl-3.0.html" rel="noopener noreferrer">GNU GPL v3.0</a>：可自由使用、研究、修改與再散布，衍生作品須以相同條款開源。</dd>
+            </div>
+            <div>
+              <dt>手機版下載</dt>
+              <dd><a href="https://play.google.com/store/apps/details?id=com.sidhant.watersort" rel="noopener noreferrer">Google Play</a> 與 <a href="https://f-droid.org/packages/com.sidhant.watersort" rel="noopener noreferrer">F-Droid</a></dd>
+            </div>
+            <div>
+              <dt>技術堆疊</dt>
+              <dd>Flutter 3.50、Dart 3.14、Riverpod、Hive 本地儲存、Flame 遊戲引擎，編譯為 WebAssembly / CanvasKit 於瀏覽器執行。</dd>
+            </div>
+          </dl>
+          <p class="source-note" style="color:var(--muted);font-size:.85rem;margin-top:1rem">
+            本站為該 GPL-3.0 專案的網頁發行頁，遵循 GPL-3.0 提供原始碼連結；遊戲版權歸原作者 sidhant947 所有。
+          </p>
+        </div>
+      </section>
+
+      <section id="faq" class="block">
+        <div class="wrap">
+          <h2>常見問題</h2>
+          <div class="faq-list">
+            <details>
+              <summary>Water Sort 水排序怎麼玩？</summary>
+              <p>點選來源試管再點目標試管倒水。目標須為空或頂端同色且空間足夠；讓每支試管只剩單一顏色即可過關。</p>
+            </details>
+            <details>
+              <summary>Water Sort 免費嗎？需要註冊或下載嗎？</summary>
+              <p>完全免費、免註冊、免下載。網頁版以 WebAssembly 在瀏覽器執行，開啟即可玩；Android 也可從 Google Play 或 F-Droid 安裝。</p>
+            </details>
+            <details>
+              <summary>遊戲會收集資料或顯示廣告嗎？</summary>
+              <p>不會。這是一款 100% 離線、無廣告、無追蹤的遊戲，進度只保存在你的裝置。</p>
+            </details>
+            <details>
+              <summary>這是開源遊戲嗎？授權是什麼？</summary>
+              <p>是。由 sidhant947 以 Flutter 開發，採 GPL-3.0 授權，原始碼公開於 GitHub，可自由研究、修改與再散布（需遵守 GPL-3.0）。</p>
+            </details>
+            <details>
+              <summary>為什麼第一次載入比較久？</summary>
+              <p>首次載入需下載遊戲引擎與 CanvasKit（數 MB）。載入完成後由瀏覽器快取，後續開啟會快很多。</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" aria-label="免責聲明">
+        <div class="wrap">
+          <div class="disclaimer">
+            <h2 style="font-size:1.2rem;margin:0 0 .5rem">免責聲明</h2>
+            <p style="margin:0;color:#cfd8ee;font-size:.9rem">
+              本頁為開源專案 Water Sort 的網頁發行與說明頁，遊戲版权归原作者所有，採 GPL-3.0 授權。本站未修改遊戲邏輯，亦不保證與原作者之官方版本完全一致。若為原作者，請聯繫移除。
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>Water Sort 水排序 · 開源 GPL-3.0 · 原作者 sidhant947</p>
+      <nav aria-label="頁尾導覽">
+        <a href="#top">回到頂部</a>
+        <a href="sitemap.xml">網站地圖</a>
+        <a href="llms.txt">AI 摘要檔</a>
+        <a href="play/index.html">全螢幕遊戲</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // 遊戲 iframe 載入完成後更新狀態文字
+    (function () {
+      var frame = document.getElementById('game');
+      var state = document.getElementById('game-state');
+      if (!frame || !state) return;
+      frame.addEventListener('load', function () {
+        try {
+          // 跨同源（同網域）可讀取；若失敗則保持「載入中」不報錯
+          if (frame.contentDocument && frame.contentDocument.body) {
+            state.textContent = '已就緒';
+          } else {
+            state.textContent = '已載入';
+          }
+        } catch (err) {
+          state.textContent = '已載入';
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
