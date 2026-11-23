@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Allow: /play/
+
+Sitemap: https://vip-4.github.io/water-sort/sitemap.xml
