@@ -1,0 +1,61 @@
+# Water Sort 水排序
+
+> 免費開源的顏色分類益智遊戲：把試管中的彩色水排序，讓每支試管只剩單一顏色。以 Flutter 開發、WebAssembly 於瀏覽器執行，免註冊、免下載、100% 離線、無廣告、無追蹤，採 GPL-3.0 授權。
+
+正式網址：https://vip-4.github.io/water-sort/
+原始碼：https://github.com/sidhant947/water-sort
+手機版：Google Play（com.sidhant.watersort）／F-Droid
+
+## 概述
+
+Water Sort 是一款規則簡單但耐玩的益智遊戲。畫面中有多支裝著不同顏色水層的試管，玩家反覆「倒水」，目標是讓每支試管都只剩單一顏色。關卡由程序生成、無關卡上限、無體力值，可無限遊玩。
+
+本頁為該 GPL-3.0 開源專案的網頁發行頁，遊戲以 Flutter 編譯為 WebAssembly，於瀏覽器內執行，不需安裝或註冊。
+
+## 玩法
+
+1. 點選來源試管，再點選目標試管。
+2. 目標試管必須為空，或頂端顏色與來源相同，且剩餘空間足夠。
+3. 每次倒入「頂端連續同色」的水；空間不足時只倒入可容納的部分。
+4. 當每支試管都只剩單一顏色（或為空）即過關。
+
+## 特色
+
+- 程序生成無限關卡，無關卡上限、體力或等待
+- 100% 離線，不需要網路
+- 無廣告、無追蹤、無分析、免多餘權限
+- 跨平台：網頁版（WebAssembly）、Android（Google Play / F-Droid）
+- 開源 GPL-3.0，原始碼可驗證
+
+## 技術說明
+
+- 語言／框架：Dart / Flutter 3.50（Dart 3.14）
+- 狀態管理：Riverpod；本地儲存：Hive
+- 遊戲引擎：Flame；音效：flame_audio
+- 編譯：flutter build web（dart2js + CanvasKit）
+- 執行環境：任何支援 WebAssembly 與 Canvas 的現代瀏覽器
+
+## 開源與授權
+
+- 原作者：sidhant947
+- 授權：GNU GPL v3.0（https://www.gnu.org/licenses/gpl-3.0.html）
+- 原始碼：https://github.com/sidhant947/water-sort
+- 手機版：https://play.google.com/store/apps/details?id=com.sidhant.watersort ；https://f-droid.org/packages/com.sidhant.watersort
+
+## 常見問題
+
+Q：Water Sort 怎麼玩？
+A：點來源試管再點目標試管倒水；目標須空或頂端同色且空間足夠，讓每支試管只剩單一顏色即過關。
+
+Q：免費嗎？需要註冊或下載嗎？
+A：完全免費、免註冊、免下載。網頁版開啟即玩；Android 可從 Google Play 或 F-Droid 安裝。
+
+Q：會收集資料或顯示廣告嗎？
+A：不會。100% 離線、無廣告、無追蹤，進度只留在你的裝置。
+
+Q：授權是什麼？
+A：GPL-3.0。可自由使用、研究、修改與再散布，衍生作品須以相同條款開源。
+
+## SEO / GEO 說明
+
+本站包含完整中繼資料（title、description、keywords、robots、canonical、Open Graph、Twitter Card）、五組 JSON-LD 結構化資料（WebSite、Organization、SoftwareApplication、BreadcrumbList、FAQPage）、語意化 HTML5 標籤、答案前置寫作、定義列表與 FAQ、robots.txt、sitemap.xml 與本檔案，便於搜尋引擎索引與生成式 AI 摘要引用。
